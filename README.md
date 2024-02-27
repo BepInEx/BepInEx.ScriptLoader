@@ -100,3 +100,15 @@ In most cases, you can fix the script yourself. Open the script specified in the
 * Replace `HarmonyWrapper.PatchAll` with `Harmony.CreateAndPatchAll`
 
 Then try to run the game again. If the error persists or you get some other error, the script is too complex to fix by this guide. In that case please conact the developer of the script and ask them to fix it.
+
+### Upgrading to 1.2.5.0
+
+Starting with 1.2.5.0, you might notice an error such as: `Use UnpatchSelf() to unpatch current instance...`
+
+This error happens due to scripts that were made for setups afflicted by the fixed issue above for why this fork was made.
+
+In most cases, you can fix the script yourself. Open the script specified in the error into Notepad or some other text editor and do the following changes:
+
+* Replace `Harmony.UnpatchAll(string)` with `Harmony.UnpatchSelf()`
+
+Then try to run the game again. If the error persists or you get some other error, the script is too complex to fix by this guide. In that case please conact the developer of the script and ask them to fix it.
