@@ -98,9 +98,9 @@ In most cases, you can fix the script yourself. Open the script specified in the
 
 Then try to run the game again. If the error persists or you get some other error, the script is too complex to fix by this guide. In that case please conact the developer of the script and ask them to fix it.
 
-### Upgrading to 1.2.5.0
+### Upgrading to 2.0
 
-Starting with 1.2.5.0, you might notice an error such as: `Use UnpatchSelf() to unpatch current instance...`
+Starting with 2.0, you might notice an error such as: `Use UnpatchSelf() to unpatch current instance...`
 
 This error happens due to scripts that were made for setups afflicted by the fixed issue above for why this fork was made.
 

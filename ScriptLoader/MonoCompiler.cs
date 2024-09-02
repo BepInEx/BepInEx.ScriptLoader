@@ -131,7 +131,7 @@ namespace ScriptLoader
                 //Prevents ScriptLoader from using the old harmony library that is used for shimmed plugins.
                 if (ass.name.Name.Equals("0Harmony20"))
 	                continue;
-				import(ass.ass);
+                import(ass.ass);
             }
         }
 
