@@ -128,6 +128,9 @@ namespace ScriptLoader
             {
                 if (StdLib.Contains(ass.name.Name) || compiledAssemblies.Contains(ass.name.Name))
                     continue;
+                //Prevents ScriptLoader from using the old harmony library that is used for shimmed plugins.
+                if (ass.name.Name.Equals("0Harmony20"))
+	                continue;
                 import(ass.ass);
             }
         }
